@@ -14,6 +14,7 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->alias([
             'setLanguage' => \App\Http\Middleware\SetLanguage::class,
+            'nocache' => \App\Http\Middleware\PreventBrowserCache::class,
         ]);
         $middleware->web(append: [
             \App\Http\Middleware\SetLanguage::class,
