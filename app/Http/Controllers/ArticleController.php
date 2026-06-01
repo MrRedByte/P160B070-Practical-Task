@@ -82,7 +82,9 @@ class ArticleController extends Controller
                 ->orderBy('publication_date', 'desc')
                 ->get();
         } else {
-            $articles = collect();
+            $articles = Article::with('author')
+                ->orderBy('publication_date', 'desc')
+                ->get();
         }
 
         return view('articles.filter', compact('articles', 'authors', 'selectedAuthorId'));

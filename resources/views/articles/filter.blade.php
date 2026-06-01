@@ -5,7 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">{{ __('Filter Articles by Author') }}</div>
+                <div class="card-header">
+                    {{ __('Filter Articles by Author') }}
+                    <a href="{{ route('articles.index') }}" class="btn btn-outline-secondary float-end">{{ __('Back to Articles') }}</a>
+                </div>
                 <div class="card-body">
                     <form action="{{ route('articles.filter') }}" method="GET" class="mb-4">
                         <div class="row">

@@ -37,5 +37,8 @@
     "Login": "Autentificare",
     "Register": "Înregistrare",
     "Logout": "Deconectare",
-    "Toggle navigation": "Comută navigarea"
+    "Toggle navigation": "Comută navigarea",
+    "Dashboard": "Panou de bord",
+    "You are logged in!": "Ești autentificat!",
+    "Back to Articles": "Înapoi la Articole"
 }

@@ -40,10 +40,10 @@
                     <ul class="navbar-nav ms-auto">
                         <!-- Language Switcher -->
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('setLanguage', 'en') }}">EN</a>
+                            <a class="nav-link {{ app()->getLocale() == 'en' ? 'fw-bold text-primary' : '' }}" href="{{ route('setLanguage', 'en') }}">EN</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="{{ route('setLanguage', 'ro') }}">RO</a>
+                            <a class="nav-link {{ app()->getLocale() == 'ro' ? 'fw-bold text-primary' : '' }}" href="{{ route('setLanguage', 'ro') }}">RO</a>
                         </li>
 
                         <!-- Authentication Links -->
